@@ -45,6 +45,7 @@ var getPlatforms = function (projectName) {
             { name : 'screen-port-mdpi.png',  width : 320, height: 480 },
             { name : 'screen-port-hdpi.png',  width : 480, height: 800 },
             { name : 'screen-port-xhdpi.png', width : 720, height: 1280 },
+            { name : 'feature-graphic.png', width : 1024, height: 500 }
         ]
     });
     // TODO: add all platforms
