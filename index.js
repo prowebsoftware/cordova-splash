@@ -17,8 +17,8 @@ var getPlatforms = function (projectName) {
     platforms.push({
         name : 'ios',
         // TODO: use async fs.exists
-        isAdded : fs.existsSync('platforms/ios'),
-        splashPath : 'platforms/ios/' + projectName + '/Resources/splash/',
+        isAdded : fs.existsSync('splash/ios'),
+        splashPath : 'splash/ios/',
         splash : [
             { name : 'Default-568h@2x~iphone.png',    width : 640,  height : 1136 },
             { name : 'Default-667h.png',              width : 750,  height : 1334 },
@@ -34,17 +34,17 @@ var getPlatforms = function (projectName) {
     });
     platforms.push({
         name : 'android',
-        isAdded : fs.existsSync('platforms/android'),
-        splashPath : 'platforms/android/res/',
+        isAdded : fs.existsSync('splash/android'),
+        splashPath : 'splash/android/',
         splash : [
-            { name : 'drawable-land-ldpi/screen.png',  width : 320, height: 200 },
-            { name : 'drawable-land-mdpi/screen.png',  width : 480, height: 320 },
-            { name : 'drawable-land-hdpi/screen.png',  width : 800, height: 480 },
-            { name : 'drawable-land-xhdpi/screen.png', width : 1280, height: 720 },
-            { name : 'drawable-port-ldpi/screen.png',  width : 200, height: 320 },
-            { name : 'drawable-port-mdpi/screen.png',  width : 320, height: 480 },
-            { name : 'drawable-port-hdpi/screen.png',  width : 480, height: 800 },
-            { name : 'drawable-port-xhdpi/screen.png', width : 720, height: 1280 },
+            { name : 'screen-land-ldpi.png',  width : 320, height: 200 },
+            { name : 'screen-land-mdpi.png',  width : 480, height: 320 },
+            { name : 'screen-land-hdpi.png',  width : 800, height: 480 },
+            { name : 'screen-land-xhdpi.png', width : 1280, height: 720 },
+            { name : 'screen-port-ldpi.png',  width : 200, height: 320 },
+            { name : 'screen-port-mdpi.png',  width : 320, height: 480 },
+            { name : 'screen-port-hdpi.png',  width : 480, height: 800 },
+            { name : 'screen-port-xhdpi.png', width : 720, height: 1280 },
         ]
     });
     // TODO: add all platforms
