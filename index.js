@@ -68,7 +68,8 @@ var getPlatforms = function (projectName) {
       { name: 'drawable-port-hdpi/screen.png',  width: 480,  height: 800  },
       { name: 'drawable-port-xhdpi/screen.png', width: 720,  height: 1280 },
       { name: 'drawable-port-xxhdpi/screen.png', width: 960, height: 1600  },
-      { name: 'drawable-port-xxxhdpi/screen.png', width: 1280, height: 1920  }
+      { name: 'drawable-port-xxxhdpi/screen.png', width: 1280, height: 1920  },
+      { name: 'feature-graphic.png', width : 1024, height: 500 }
     ]
   });
   platforms.push({
