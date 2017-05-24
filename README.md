@@ -1,3 +1,7 @@
+# OrderZing changes
+
+To support OrderZing made simple changes to direct output to ORDERZING_DIR specified on command line, and added extra images to be generated for app stores (feature icons). 
+
 # cordova-splash
 
 Automatic splash screen generator for Cordova. Create a splash screen once in the root folder of your Cordova project and use cordova-splash to automatically crop and copy it for all the platforms your project supports (currenty works with iOS, Android and Windows 10).
