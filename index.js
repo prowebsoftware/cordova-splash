@@ -13,6 +13,7 @@ var argv   = require('minimist')(process.argv.slice(2));
 var settings = {};
 settings.CONFIG_FILE = argv.config || 'config.xml';
 settings.SPLASH_FILE = argv.splash || 'splash.png';
+settings.ORDERZING_DIR = argv.orderzing_dir || '';
 settings.OLD_XCODE_PATH = argv['xcode-old'] || false;
 
 /**
@@ -148,7 +149,7 @@ var generateSplash = function (platform, splash) {
   if (fs.existsSync(platformPath)) {
     srcPath = platformPath;
   }
-  var dstPath = platform.splashPath + splash.name;
+  var dstPath = settings.ORDERZING_DIR + splash.name || platform.splashPath + splash.name;
   var dst = path.dirname(dstPath);
   if (!fs.existsSync(dst)) {
     fs.mkdirsSync(dst);
